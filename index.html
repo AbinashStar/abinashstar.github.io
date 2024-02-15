@@ -3,109 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Developer Profile</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-nT7bzEEbmQkp+fzjrYWLs2SlnR8ZVRnld1sD7rYIv9k3SJCGi7hn4ZvM/oRIfRLoF6qA7yOv04v/8sU5xL6q9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Your Website Title</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Reset CSS */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+        /* Header */
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
-            color: #333;
-            margin-bottom: 20px;
         }
-        .profile-info {
-            margin-top: 20px;
+        header h1 {
+            font-size: 2em;
         }
-        .profile-info label {
-            font-weight: bold;
-            color: #555;
-            display: block;
-        }
-        .profile-info p {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            color: #333;
-            margin-left: 30px;
-        }
-        .bio {
-            margin-top: 15px;
-            color: #444;
-        }
-        .social-icons {
+        /* Navigation */
+        nav {
+            background-color: #212529;
+            padding: 10px 0;
             text-align: center;
-            margin-top: 20px;
         }
-        .social-icons a {
-            color: #555;
+        nav a {
+            color: #fff;
             text-decoration: none;
-            margin: 0 10px;
-            font-size: 20px;
-            transition: color 0.3s ease;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
         }
-        .social-icons a:hover {
-            color: #007bff;
+        nav a:hover {
+            background-color: #6c757d;
         }
-        .icon-bar {
-            width: 100%;
-            background-color: #007bff;
-            overflow: hidden;
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
-        .icon-bar a {
-            float: left;
-            width: 20%;
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
             text-align: center;
-            padding: 12px 0;
-            transition: all 0.3s ease;
-            color: white;
-            font-size: 20px;
-        }
-        .icon-bar a:hover {
-            background-color: #0056b3;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Your Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
     <div class="container">
-        <h1>Software Developer Profile</h1>
-        <div class="profile-info">
-            <label for="username">Username:</label>
-            <p id="username">JohnDoe123</p>
-            <label for="fullname">Full Name:</label>
-            <p id="fullname">John Doe</p>
-            <label for="email">Email:</label>
-            <p id="email">john.doe@example.com</p>
-            <label for="location">Location:</label>
-            <p id="location">New York, USA</p>
-        </div>
-        <div class="bio">
-            <label for="bio">Bio:</label>
-            <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
-        </div>
-        <div class="social-icons">
-            <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div class="icon-bar">
-            <a href="#"><i class="fas fa-home"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-globe"></i></a>
-            <a href="#"><i class="fas fa-search"></i></a>
-            <a href="#"><i class="fas fa-user"></i></a>
-        </div>
+        <h2>Welcome to Your Website</h2>
+        <p>This is where your main content goes. You can customize this area as per your requirements.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis a neque efficitur ultrices. Sed eu enim vitae arcu interdum lobortis. Vestibulum volutpat mauris ut justo suscipit, id vestibulum nisi bibendum. Nam non nisi eu metus pellentesque dictum vel non lectus. Quisque id tincidunt ligula, non hendrerit sapien. Sed congue auctor sem et consequat. Mauris auctor augue a mauris sodales, et convallis tortor varius. Maecenas auctor vehicula metus, non dapibus turpis fermentum in. Nunc ultricies erat eget orci tincidunt, id bibendum elit laoreet. Integer et lorem nec nulla tincidunt vestibulum.</p>
     </div>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
