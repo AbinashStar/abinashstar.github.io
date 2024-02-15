@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Abinash - Organization Timeline</title>
+    <title>I'm Abinash - Timeline</title>
     <style>
         /* Reset CSS */
         * {
@@ -27,21 +27,6 @@
         header h1 {
             font-size: 2em;
         }
-        /* Navigation */
-        nav {
-            background-color: #212529;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #6c757d;
-        }
         /* Main Content */
         .container {
             max-width: 1200px;
@@ -50,34 +35,26 @@
         }
         /* Timeline */
         .timeline {
-            position: relative;
-            padding: 20px 0;
             margin-top: 30px;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background-color: #007bff;
+            padding-left: 20px;
         }
         .event {
             margin-bottom: 50px;
             position: relative;
             padding-left: 20px;
+            border-left: 2px solid #007bff;
+            padding-bottom: 20px;
         }
-        .event::after {
+        .event::before {
             content: '';
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 12px;
-            height: 12px;
+            top: 0;
+            left: -8px;
+            width: 16px;
+            height: 16px;
             background-color: #007bff;
             border-radius: 50%;
-            transform: translate(-50%, -50%);
+            border: 2px solid #fff;
         }
         .event .date {
             font-size: 1.2em;
@@ -103,14 +80,7 @@
     <header>
         <h1>I'm Abinash</h1>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
     <div class="container">
-        <h2>Organization Timeline</h2>
         <div class="timeline">
             <div class="event">
                 <div class="date">2019</div>
@@ -142,22 +112,5 @@
     <footer>
         <p>&copy; 2024 I'm Abinash. All rights reserved.</p>
     </footer>
-    <div>
-        <img src="hi-emoji.gif" alt="Hi Emoji Sticker">
-    </div>
-    <script>
-        const title = "I'm Abinash, full-stack developer";
-        let index = 0;
-
-        function printTitle() {
-            if (index < title.length) {
-                document.title += title[index];
-                index++;
-                setTimeout(printTitle, 150); // Adjust the speed of typing
-            }
-        }
-
-        printTitle();
-    </script>
 </body>
 </html>
