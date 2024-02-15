@@ -69,36 +69,35 @@
         </div>
             <div class="container">
         <div class="timeline">
-            <div class="event">
+            <div class="card">
                 <div class="date">2019</div>
                 <div class="description">
                     Project Alpha - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
-            <div class="event">
+            <div class="card">
                 <div class="date">2020</div>
                 <div class="description">
                     Project Beta - Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
             </div>
-            <div class="event">
+            <div class="card">
                 <div class="date">2021</div>
                 <div class="description">
                     Project Gamma - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
             </div>
-            <div class="event">
+            <div class="card">
                 <div class="date">2022</div>
                 <div class="description">
                     Project Delta - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </div>
             </div>
-            <!-- Add more events as needed -->
         </div>
     </div>
     </div>
     <script>
-        const name = "Abinash";
+        const name = "I'm Abinash, Full Stack Developer";
         let index = 0;
         const nameElement = document.getElementById('name');
 
@@ -106,10 +105,9 @@
             if (index < name.length) {
                 nameElement.innerHTML += name[index];
                 index++;
-                setTimeout(printName, 150); // Adjust the speed of typing
+                setTimeout(printName, 1000);
             }
         }
-
         printName();
     </script>
     <footer>
