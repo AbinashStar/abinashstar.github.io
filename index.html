@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>I am Abinash</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .profile-info label {
+            font-weight: bold;
+        }
+        .profile-info p {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .profile-info p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
-<body>	
-	<h1>Abinash M</h1>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="profile-info">
+            <label for="username">Username:</label>
+            <p id="username">JohnDoe123</p>
+            <label for="fullname">Full Name:</label>
+            <p id="fullname">John Doe</p>
+            <label for="email">Email:</label>
+            <p id="email">john.doe@example.com</p>
+            <label for="location">Location:</label>
+            <p id="location">New York, USA</p>
+            <label for="bio">Bio:</label>
+            <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </div>
+    </div>
 </body>
 </html>
